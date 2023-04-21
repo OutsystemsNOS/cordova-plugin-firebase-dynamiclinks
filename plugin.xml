@@ -20,6 +20,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <preference name="APP_DOMAIN_NAME" default="firebase_domain_url_prefix"/>
     <preference name="APP_DOMAIN_PATH" default="/" />
+    <preference name="USER_TRACKING_DESCRIPTION_IOS" default="Esta informação será utilizada para lhe apresentar anúncios personalizados." />
 
     <dependency id="cordova-outsystems-firebase-core" url="https://github.com/OutSystems/cordova-outsystems-firebase-core.git#1.0.1"/>
 
@@ -61,6 +62,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <preference name="IOS_FIREBASE_DYNAMICLINKS_VERSION" default="~> 8.6.0"/>
 
         <hook type="after_prepare" src="hooks/ios/iOSCopyPreferences.js" />
+               
+        <config-file target="*-Info.plist" parent="NSUserTrackingUsageDescription">
+            <string>$USER_TRACKING_DESCRIPTION_IOS</string>
+        </config-file>
 
         <config-file parent="/*" target="config.xml">
             <preference name="DOMAIN_URI_PREFIX" value="https://$APP_DOMAIN_NAME$APP_DOMAIN_PATH"/>
