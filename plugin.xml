@@ -27,7 +27,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <platform name="android">
 
         <hook type="after_prepare" src="hooks/android/androidCopyPreferences.js" />
-        <!-- <hook type="before_plugin_install" src="hooks/android/build_gradle_add_dependency.js" /> -->
+        <hook type="before_plugin_install" src="hooks/android/build_gradle_add_dependency.js" />
 
         <preference name="ANDROID_FIREBASE_DYNAMICLINKS_VERSION" default="20.1.1"/>
 
