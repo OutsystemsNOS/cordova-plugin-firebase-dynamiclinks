@@ -8,6 +8,7 @@ buildscript {
         //classpath 'com.android.tools.build:gradle:3.4.2'
         //classpath 'com.google.gms:google-services:4.2.0'
         
+        classpath 'com.android.tools.build:gradle:3.4.+'
         classpath 'com.google.gms:google-services:4.3.+'
     }
 }
@@ -22,7 +23,6 @@ ext.postBuildExtras = {
         // class must be used instead of id(string) to be able to apply plugin from non-root gradle file
         
         apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
-        //googleServices.disableVersionCheck = true
-        com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+        googleServices.disableVersionCheck = true
     }
 }
