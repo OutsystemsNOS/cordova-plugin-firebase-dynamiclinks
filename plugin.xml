@@ -60,7 +60,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <platform name="ios">
         <!--<preference name="IOS_FIREBASE_DYNAMICLINKS_VERSION" default="~> 8.6.0"/>-->
-        <preference name="IOS_FIREBASE_DYNAMICLINKS_VERSION" default="~> 8.6.0"/>
+        <preference name="IOS_FIREBASE_DYNAMICLINKS_VERSION" default="~> 8.13.0"/>
 
         <hook type="after_prepare" src="hooks/ios/iOSCopyPreferences.js" />
                
