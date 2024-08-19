@@ -2,7 +2,6 @@
 #import "AppDelegate.h"
 
 //@import Firebase;
-@import FirebaseDynamicLinks;
 
 @interface FirebaseDynamicLinksPlugin : CDVPlugin
 
