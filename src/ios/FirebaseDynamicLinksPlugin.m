@@ -2,7 +2,7 @@
 
 @import FirebaseDynamicLinks;
 
-@implementation FirebaseDynamicLinksPlugin
+@implementation FirebaseDynamicLinks
 
 - (void)pluginInitialize {
     NSLog(@"Starting Firebase DynamicLinks plugin");
