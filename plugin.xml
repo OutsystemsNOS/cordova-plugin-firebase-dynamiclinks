@@ -24,7 +24,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <dependency id="cordova-outsystems-firebase-core" url="https://github.com/OutSystems/cordova-outsystems-firebase-core.git#1.0.1"/>
 
-    <dependency id="com.cordova.plugin.intentfilter" url="https://github.com/MiguelRosaDev/cordova-deeplinks-plugin"/>
+    <dependency id="com.cordova.deeplinks.plugin" url="https://github.com/MiguelRosaDev/cordova-deeplinks-plugin"/>
 
     <platform name="android">
 
